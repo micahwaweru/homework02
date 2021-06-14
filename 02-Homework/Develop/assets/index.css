@@ -7,11 +7,12 @@
 body {
     background-color: black;
     color: white;
+    font-family: sans-serif;
 }
 
 .header {
-    padding: 20px;
-    background-color: lightgray;
+    padding: 50px;
+    background-color: black;
 }
 
 .header h1 {
@@ -41,25 +42,60 @@ a{
 }
 
 .hero{
-    height: 800px;
+    height: 600px;
     width: 100%;
     margin-bottom: 25px;
-    background-color: white;
+    background-color: black;
     background-size: cover;
     background-position: center;
+    display: flex;
+    align-content: space-between;
 
 }
 
-.content{
+.hero p{
+    padding: 50px;
+    font-size: 2em;
+    flex-wrap: wrap;
     width: 75%;
-    display: inline-block;
-    margin-left: 20px;
+}
+
+.hero img{
+    margin-top: 50px;
+    height: 50%;
+    border: solid black 5px;
+    border-radius: 15px;
+}
+
+.content{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    margin-left: 12%;
+}
+
+#lead-img{
+    max-height: 500px;
+    max-width: 666px;
+    min-height: 250px;
+    min-width: 333px;
+    margin-bottom: 50px;
+    
+}
+
+#lead-img img{
+    height: 100%;
+    width: 100%;
+    margin-left: 200px;
+    border: solid black 5px;
+    border-radius: 15px;
 }
 
 .lft-img-clr-blck{
     margin-bottom: 20px;
     padding: 50px;
-    height: 300px;
+    min-height: 300px;
+    min-width: 75%;
     background-color: white;
     color: black;
 }
@@ -67,7 +103,8 @@ a{
 .rgt-img-clr-blck{
     margin-bottom: 20px;
     padding: 50px;
-    height: 300px;
+    min-height: 300px;
+    min-width: 75%;
     background-color: white;
     color: black;
 }
